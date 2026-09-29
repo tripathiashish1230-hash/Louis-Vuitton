@@ -1,0 +1,126 @@
+{
+    "categorySections": [
+        {
+            "title": "Shop by Category",
+            "products": [
+                {
+                    "image": "/src/assets/womens-bags.jpg",
+                    "name": "Women’s Bags"
+                },
+                {
+                    "image": "/src/assets/womens-small-leather-goods.jpg",
+                    "name": "Women’s Small Leather Goods"
+                },
+                {
+                    "image": "/src/assets/womens-accessories.jpg",
+                    "name": "Women’s Accessories"
+                },
+                {
+                    "image": "/src/assets/womens-shoes.jpg",
+                    "name": "Women’s Shoes"
+                }
+            ]
+        },
+        {
+            "title": "",
+            "products": [
+                {
+                    "image": "/src/assets/mens-bags.jpg",
+                    "name": "Men’s Bags"
+                },
+                {
+                    "image": "/src/assets/mens-ready-to-wear.jpg",
+                    "name": "Men’s Ready-to-Wear"
+                },
+                {
+                    "image": "/src/assets/mens-shoes.jpg",
+                    "name": "Men’s Shoes"
+                },
+                {
+                    "image": "/src/assets/mens-accessories.jpg",
+                    "name": "Men’s Accessories"
+                }
+            ]
+        }
+    ],
+    "productSections": [
+        {
+            "category": "WOMEN",
+            "title": "New Handbags for Fall",
+            "products": [
+                {
+                    "image": "/src/assets/low-key-hobo-pm.jpg",
+                    "name": "Low Key Hobo PM",
+                    "price": "$3,600.00"
+                },
+                {
+                    "image": "/src/assets/neverfull-inside-out-mm.jpg",
+                    "name": "Neverfull Inside Out MM",
+                    "price": "$3,450.00"
+                },
+                {
+                    "image": "/src/assets/express-pm.jpg",
+                    "name": "Express PM",
+                    "price": "$4,350.00"
+                },
+                {
+                    "image": "/src/assets/multipass.jpg",
+                    "name": "Multipass",
+                    "price": "$3,350.00"
+                }
+            ]
+        },
+        {
+            "category": "WOMEN",
+            "title": "Back to School Collection",
+            "products": [
+                {
+                    "image": "/src/assets/wallet-on-chain-ivy.jpg",
+                    "name": "Wallet On Chain Ivy",
+                    "price": "$2,360.00"
+                },
+                {
+                    "image": "/src/assets/3d-monogram-argyle-pullover.jpg",
+                    "name": "3D Monogram Argyle Pullover",
+                    "price": "$2,780.00"
+                },
+                {
+                    "image": "/src/assets/varsity-stripe-knit-skirt.jpg",
+                    "name": "Varsity Stripe Knit Skirt",
+                    "price": "$1,750.00"
+                },
+                {
+                    "image": "/src/assets/star-trail-ankle-boot.jpg",
+                    "name": "Star Trail Ankle Boot",
+                    "price": "$2,060.00"
+                }
+            ]
+        },
+        {
+            "category": "LV APP: EARLY ACCESS",
+            "title": "Sports Capsule Collection",
+            "products": [
+                {
+                    "image": "/src/assets/pocket-organizer.jpg",
+                    "name": "Pocket Organizer",
+                    "price": "$525.00"
+                },
+                {
+                    "image": "/src/assets/double-card-holder.jpg",
+                    "name": "Double Card Holder",
+                    "price": "$480.00"
+                },
+                {
+                    "image": "/src/assets/porte-cartes-magnet.jpg",
+                    "name": "Porte-Cartes Magnet",
+                    "price": "$520.00"
+                },
+                {
+                    "image": "/src/assets/passport-cover.jpg",
+                    "name": "Passport Cover",
+                    "price": "$505.00"
+                }
+            ]
+        }
+    ]
+}
