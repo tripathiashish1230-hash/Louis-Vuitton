@@ -1,0 +1,7 @@
+import{a as e,c as t,d as n,g as r,o as i,p as a,t as o,u as s}from"./index-DZltR00A.js";var c={class:`wishlist-page`},l={key:0,class:`empty-wishlist`},u={key:1,class:`wishlist-grid`},d={class:`wishlist-image`},f=[`src`,`alt`],p=[`onClick`],m={class:`wishlist-info`},h={class:`product-name`},g={class:`product-price`},_=o({__name:`Wishlist`,setup(o){let _=a(JSON.parse(localStorage.getItem(`wishlist`))||[]),v=e=>{_.value=_.value.filter(t=>t.name!==e.name),localStorage.setItem(`wishlist`,JSON.stringify(_.value))};return(a,o)=>(s(),t(`section`,c,[_.value.length===0?(s(),t(`div`,l,[...o[0]||=[i(`p`,null,`Your wishlist is empty.`,-1)]])):(s(),t(`div`,u,[(s(!0),t(e,null,n(_.value,e=>(s(),t(`div`,{key:e.name,class:`wishlist-card`},[i(`div`,d,[i(`img`,{src:e.image,alt:e.name},null,8,f),i(`button`,{class:`wishlist-remove`,onClick:t=>v(e),"aria-label":`Remove from wishlist`},[...o[1]||=[i(`svg`,{viewBox:`0 0 24 24`},[i(`path`,{d:`M20.8 8.7
+              C20.8 13.5 12 19 12 19
+              C12 19 3.2 13.5 3.2 8.7
+              C3.2 6.1 5 4.3 7.4 4.3
+              C9.1 4.3 10.6 5.3 12 7
+              C13.4 5.3 14.9 4.3 16.6 4.3
+              C19 4.3 20.8 6.1 20.8 8.7Z`})],-1)]],8,p)]),i(`div`,m,[i(`p`,h,r(e.name),1),i(`p`,g,r(e.price),1)])]))),128))]))]))}},[[`__scopeId`,`data-v-914a0754`]]);export{_ as default};
