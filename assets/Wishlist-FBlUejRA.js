@@ -1,0 +1,7 @@
+import{_ as e,a as t,c as n,d as r,m as i,o as a,p as o,t as s,u as c}from"./index-BjLkQf0t.js";var l={class:`wishlist-page`},u={key:0,class:`empty-wishlist`},d={key:1,class:`wishlist-grid`},f={class:`wishlist-image`},p=[`src`,`alt`],m=[`onClick`],h={class:`wishlist-info`},g={class:`product-name`},_={class:`product-price`},v=s({__name:`Wishlist`,setup(s){let v=o((()=>{try{let e=localStorage.getItem(`wishlist`);return e?JSON.parse(e):[]}catch(e){return console.error(`Error loading wishlist:`,e),[]}})()),y=e=>{v.value=v.value.filter(t=>t.name!==e.name),localStorage.setItem(`wishlist`,JSON.stringify(v.value))};return(o,s)=>(c(),n(`section`,l,[v.value.length===0?(c(),n(`div`,u,[...s[0]||=[a(`p`,null,`Your wishlist is empty.`,-1)]])):(c(),n(`div`,d,[(c(!0),n(t,null,r(v.value,t=>(c(),n(`div`,{key:t.name,class:`wishlist-card`},[a(`div`,f,[a(`img`,{src:`${i(`/Louis-Vuitton/`)}${t.image.replace(/^\/+/,``)}`,alt:t.name},null,8,p),a(`button`,{class:`wishlist-remove`,type:`button`,onClick:e=>y(t),"aria-label":`Remove from wishlist`},[...s[1]||=[a(`svg`,{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,"stroke-width":`1.5`},[a(`path`,{d:`M20.8 8.7
+                C20.8 13.5 12 19 12 19
+                C12 19 3.2 13.5 3.2 8.7
+                C3.2 6.1 5 4.3 7.4 4.3
+                C9.1 4.3 10.6 5.3 12 7
+                C13.4 5.3 14.9 4.3 16.6 4.3
+                C19 4.3 20.8 6.1 20.8 8.7Z`})],-1)]],8,m)]),a(`div`,h,[a(`p`,g,e(t.name),1),a(`p`,_,e(t.price),1)])]))),128))]))]))}},[[`__scopeId`,`data-v-35061644`]]);export{v as default};
