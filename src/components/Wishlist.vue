@@ -1,28 +1,38 @@
 <template>
   <section class="wishlist-page">
+    <!-- Empty Wishlist -->
     <div v-if="wishlist.length === 0" class="empty-wishlist">
       <p>Your wishlist is empty.</p>
     </div>
+
+    <!-- Wishlist Products -->
     <div v-else class="wishlist-grid">
       <div v-for="product in wishlist" :key="product.name" class="wishlist-card">
+        <!-- Product Image -->
         <div class="wishlist-image">
           <img :src="product.image" :alt="product.name" />
-          <button class="wishlist-remove" @click="removeFromWishlist(product)" aria-label="Remove from wishlist">
-            <svg viewBox="0 0 24 24">
+
+          <!-- Remove Button -->
+          <button class="wishlist-remove" type="button" @click="removeFromWishlist(product)"
+            aria-label="Remove from wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <path d="M20.8 8.7
-              C20.8 13.5 12 19 12 19
-              C12 19 3.2 13.5 3.2 8.7
-              C3.2 6.1 5 4.3 7.4 4.3
-              C9.1 4.3 10.6 5.3 12 7
-              C13.4 5.3 14.9 4.3 16.6 4.3
-              C19 4.3 20.8 6.1 20.8 8.7Z" />
+                C20.8 13.5 12 19 12 19
+                C12 19 3.2 13.5 3.2 8.7
+                C3.2 6.1 5 4.3 7.4 4.3
+                C9.1 4.3 10.6 5.3 12 7
+                C13.4 5.3 14.9 4.3 16.6 4.3
+                C19 4.3 20.8 6.1 20.8 8.7Z" />
             </svg>
           </button>
         </div>
+
+        <!-- Product Information -->
         <div class="wishlist-info">
           <p class="product-name">
             {{ product.name }}
           </p>
+
           <p class="product-price">
             {{ product.price }}
           </p>
@@ -35,17 +45,28 @@
 <script setup>
 import { ref } from 'vue'
 
+// Safely get wishlist from localStorage
+const getWishlist = () => {
+  try {
+    const savedWishlist = localStorage.getItem('wishlist')
+
+    return savedWishlist ? JSON.parse(savedWishlist) : []
+  } catch (error) {
+    console.error('Error loading wishlist:', error)
+    return []
+  }
+}
+
 // Wishlist
-const wishlist = ref(
-  JSON.parse(localStorage.getItem('wishlist')) || []
-)
+const wishlist = ref(getWishlist())
+
 // Remove product from wishlist
 const removeFromWishlist = (product) => {
   wishlist.value = wishlist.value.filter(
     item => item.name !== product.name
   )
 
-  // Save updated wishlist
+  // Update localStorage
   localStorage.setItem(
     'wishlist',
     JSON.stringify(wishlist.value)
